@@ -1,0 +1,7 @@
+{
+  "package": "github.coolclk.multiplayerfixed.mixin",
+  "refmap": "mixins.multiplayerfixed.refmap.json",
+  "client": [
+    "MixinMinecraft"
+  ]
+}

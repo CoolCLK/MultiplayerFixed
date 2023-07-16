@@ -1,0 +1,23 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="All rights reserved"
+[[mods]]
+modId="multiplayerfixed"
+version="${file.jarVersion}"
+displayName="Multiplayer Fixed"
+logoFile=""
+credits=""
+authors="CoolCLK"
+description='''A mod to make the multiplayer active on any time.'''
+[[dependencies.multiplayerfixed]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="NONE"
+    side="CLIENT"
+[[dependencies.multiplayerfixed]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="CLIENT"
