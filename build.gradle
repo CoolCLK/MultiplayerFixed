@@ -75,7 +75,7 @@ jar {
             "Specification-Vendor": "CoolCLK",
             "Specification-Version": "1",
             "Implementation-Title": project.name,
-            "Implementation-Version": "${version}",
+            "Implementation-Version": project.version,
             "Implementation-Vendor" :"CoolCLK",
             "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
             "TweakOrder": "0",
@@ -102,4 +102,14 @@ publishing {
 mixin {
     add sourceSets.main, 'mixins.multiplayerfixed.refmap.json'
     config 'mixins.multiplayerfixed.json'
+}
+
+repositories {
+    google()
+    mavenCentral()
+    maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
+    maven { url 'https://maven.aliyun.com/nexus/content/repositories/jcenter' }
+    maven { url 'https://maven.aliyun.com/nexus/content/repositories/google' }
+    maven { url 'https://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
+    maven { url "https://jitpack.io" }
 }
